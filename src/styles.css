@@ -1,8 +1,57 @@
-h1 {
+body {
+  background-color: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url("../images/ullal-beach.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+  text-align: center;
+  padding: 150px 0;
+}
+
+header h1 {
   font-family: "Lemon", serif;
-  font-size: 50px;
+  font-weight: 100;
+  font-size: 60px;
+  line-height: 1.5;
+}
+
+header h2 {
+  font-family: "Lemon", serif;
+  font-weight: 50;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+header h3 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 1.5;
 }
 
 footer {
   font-size: 10px;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  header h2 {
+    font-size: 10px;
+  }
+  header h3 {
+    font-size: 10px;
+  }
 }
