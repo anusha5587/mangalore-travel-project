@@ -1,5 +1,9 @@
 body {
-  background: whitesmoke;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(47, 232, 244) 0.1%,
+    rgba(160, 244, 202, 0.86) 57.5%
+  );
   font-family: "Lemon", serif;
 }
 
@@ -15,10 +19,16 @@ body {
 
 .img-responsive {
   max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-footer-section {
@@ -26,16 +36,25 @@ body {
 }
 
 section {
-  max-width: 1100px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 100px;
+}
+
+.second-part {
+  background-color: #f8f8f8;
+  padding: 100px;
+}
+
+.text-center {
+  text-align: center;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
     url("../images/ullal-beach.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: whitesmoke;
+  color: white;
   text-align: center;
   padding: 110px;
 }
@@ -62,7 +81,7 @@ header h3 {
 }
 
 main {
-  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background: whitesmoke;
 }
 
 main h2 {
@@ -84,6 +103,22 @@ main h3 {
   margin: 0;
 }
 
+main h4 {
+  font-family: "Caladea", serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+}
+
+main h5 {
+  font-family: "Caladea", serif;
+  font-weight: 900;
+  font-size: 11px;
+  line-height: 1;
+  margin: 0;
+}
+
 main p {
   font-family: "Merriweather", serif;
   font-weight: 900;
@@ -92,6 +127,37 @@ main p {
   opacity: 0.6;
 }
 
+.btn {
+  display: block;
+  color: #495a63;
+  font-family: "Merriweather", serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background: linear-gradient(
+    243.4deg,
+    rgb(0, 215, 206) 13%,
+    rgb(0, 132, 255) 98%
+  );
+  text-decoration: none;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
 footer {
   color: aliceblue;
   background-image: linear-gradient(rgba(40, 107, 78, 0.6), rgba(0, 0, 0, 0.4)),
