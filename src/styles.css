@@ -17,6 +17,15 @@ body {
   grid-gap: 50px;
 }
 
+section.instagram-embeds {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+section.instagram-embeds h3 {
+  padding-bottom: 20px;
+}
+
 .img-responsive {
   margin: 0 auto;
   max-width: 100%;
